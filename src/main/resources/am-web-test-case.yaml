@@ -1,0 +1,14 @@
+# Details of a test suite
+---
+testCases:
+  -
+    testCaseName: US ADV Mutual Fund general health check
+    url: https://am.jpmorgan.com/us/en/asset-management/gim/adv/products/d/jpmorgan-core-bond-fund-a-4812c0357
+    pageValidationWebElement: //*[@id='fund-name']
+    validationPoints:
+      - validationName: Fund Name check
+        dataElementXpath: //*[@id='fund-name']
+        dataElementValidationValue: JPMorgan Core Bond Fund
+      - validationName: NAV date check
+        dataElementClass: data-testid='nav-test-as-of-date'
+        dataElementValidationRule: currentDate
