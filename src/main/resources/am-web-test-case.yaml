@@ -10,5 +10,5 @@ testCases:
         dataElementXpath: //*[@id='fund-name']
         dataElementValidationValue: JPMorgan Core Bond Fund
       - validationName: NAV date check
-        dataElementClass: data-testid='nav-test-as-of-date'
+        dataElementClass: "[data-testid='nav-test-as-of-date']"
         dataElementValidationRule: currentDate
